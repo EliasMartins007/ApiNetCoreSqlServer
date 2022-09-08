@@ -59,3 +59,16 @@ C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\runtimes\win\
 C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Elias\Desktop\projeto minimal_API\herois\obj\Debug\net6.0\herois.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.Extensions.Logging.File.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.Sinks.Async.dll
+C:\Users\Elias\Desktop\projeto minimal_API\herois\bin\Debug\net6.0\Serilog.Sinks.RollingFile.dll

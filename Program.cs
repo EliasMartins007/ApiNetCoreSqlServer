@@ -1,7 +1,6 @@
 using herois.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
-using System.Reflection;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 //add
@@ -11,6 +10,18 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//serilog elias08/09
+//remove default logging providers
+builder.Logging.ClearProviders();
+//SeriLog configure
+var logger = new LoggerConfiguration()
+     .WriteTo.Console()
+    .CreateLogger();
+//Registra Serilog
+builder.Logging.AddSerilog(logger);
+//Registra Serilog em File
+builder.Logging.AddFile("Logs/minha-app-(Date).txt");
 
 
 var app = builder.Build();
