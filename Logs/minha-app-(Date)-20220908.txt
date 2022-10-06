@@ -36,3 +36,48 @@
 FROM [Superheros] AS [s]" (0723d8ff)
 2022-09-08T15:55:25.6156890-03:00 0HMKHPEGCQ2D0:0000000D [INF] Executed endpoint '"HTTP: GET /superhero"' (99874f2b)
 2022-09-08T15:55:25.6387315-03:00 0HMKHPEGCQ2D0:0000000D [INF] Request finished HTTP/2 GET https://localhost:7245/superhero - - - 200 - application/json;+charset=utf-8 2308.9741ms (791a596a)
+2022-09-08T16:03:47.0544837-03:00  [INF] Now listening on: "https://localhost:7245" (d826f4b8)
+2022-09-08T16:03:47.0849862-03:00  [INF] Now listening on: "http://localhost:5051" (d826f4b8)
+2022-09-08T16:03:47.0896292-03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-09-08T16:03:47.0906868-03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-09-08T16:03:47.0915604-03:00  [INF] Content root path: "C:\Users\Elias\Desktop\projeto minimal_API\herois\" (b5d60022)
+2022-09-08T16:03:48.6854774-03:00 0HMKHPJDQMT5O:00000001 [INF] Request starting HTTP/2 GET https://localhost:7245/ - - (ca22a1cb)
+2022-09-08T16:03:48.8544781-03:00 0HMKHPJDQMT5O:00000001 [INF] Executing endpoint '"HTTP: GET /"' (500cc934)
+2022-09-08T16:03:48.8940696-03:00 0HMKHPJDQMT5O:00000001 [INF] Executed endpoint '"HTTP: GET /"' (99874f2b)
+2022-09-08T16:03:48.9091167-03:00 0HMKHPJDQMT5O:00000001 [INF] Request finished HTTP/2 GET https://localhost:7245/ - - - 200 - text/plain;+charset=utf-8 221.2552ms (791a596a)
+2022-09-08T16:03:48.9681142-03:00 0HMKHPJDQMT5O:00000003 [INF] Request starting HTTP/2 GET https://localhost:7245/favicon.ico - - (ca22a1cb)
+2022-09-08T16:03:48.9700061-03:00 0HMKHPJDQMT5O:00000003 [INF] Request finished HTTP/2 GET https://localhost:7245/favicon.ico - - - 404 0 - 2.6137ms (791a596a)
+2022-09-08T16:03:52.3310306-03:00 0HMKHPJDQMT5O:00000005 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - - (ca22a1cb)
+2022-09-08T16:03:52.6848955-03:00 0HMKHPJDQMT5O:00000005 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - - - 200 - text/html;charset=utf-8 317.1069ms (791a596a)
+2022-09-08T16:03:52.7472133-03:00 0HMKHPJDQMT5O:00000007 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - - (ca22a1cb)
+2022-09-08T16:03:52.7478908-03:00 0HMKHPJDQMT5O:00000009 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-09-08T16:03:52.7548621-03:00 0HMKHPJDQMT5O:00000009 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 6.8715ms (791a596a)
+2022-09-08T16:03:53.0093389-03:00 0HMKHPJDQMT5O:00000007 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 262.0734ms (791a596a)
+2022-09-08T16:03:53.8233294-03:00 0HMKHPJDQMT5O:0000000B [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-09-08T16:03:53.8300297-03:00 0HMKHPJDQMT5O:0000000B [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 22.0246ms (791a596a)
+2022-09-08T16:03:53.9560495-03:00 0HMKHPJDQMT5O:0000000D [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - - (ca22a1cb)
+2022-09-08T16:03:54.2198727-03:00 0HMKHPJDQMT5O:0000000D [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 266.1619ms (791a596a)
+2022-09-08T16:04:00.8793963-03:00 0HMKHPJDQMT5O:0000000F [INF] Request starting HTTP/2 GET https://localhost:7245/superhero - - (ca22a1cb)
+2022-09-08T16:04:00.8820368-03:00 0HMKHPJDQMT5O:0000000F [INF] Executing endpoint '"HTTP: GET /superhero"' (500cc934)
+2022-09-08T16:04:01.8091668-03:00 0HMKHPJDQMT5O:0000000F [INF] Entity Framework Core "6.0.8" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.8"' with options: "None" (d2805559)
+2022-09-08T16:04:02.6796619-03:00 0HMKHPJDQMT5O:0000000F [INF] Executed DbCommand ("63"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Firstname], [s].[Heroname], [s].[Lastname]
+FROM [Superheros] AS [s]" (0723d8ff)
+2022-09-08T16:04:02.8144939-03:00 0HMKHPJDQMT5O:0000000F [INF] Executed endpoint '"HTTP: GET /superhero"' (99874f2b)
+2022-09-08T16:04:02.8367398-03:00 0HMKHPJDQMT5O:0000000F [INF] Request finished HTTP/2 GET https://localhost:7245/superhero - - - 200 - application/json;+charset=utf-8 1961.3729ms (791a596a)
+2022-09-08T16:06:09.3105513-03:00 0HMKHPJDQMT5O:00000011 [INF] Request starting HTTP/2 POST https://localhost:7245/superhero application/json 77 (ca22a1cb)
+2022-09-08T16:06:09.3124847-03:00 0HMKHPJDQMT5O:00000011 [INF] Executing endpoint '"HTTP: POST /superhero"' (500cc934)
+2022-09-08T16:06:09.3801428-03:00 0HMKHPJDQMT5O:00000011 [INF] Entity Framework Core "6.0.8" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"6.0.8"' with options: "None" (d2805559)
+2022-09-08T16:06:09.6082392-03:00 0HMKHPJDQMT5O:00000011 [INF] Executed DbCommand ("43"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Superheros] ([Firstname], [Heroname], [Lastname])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Superheros]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2022-09-08T16:06:09.6838219-03:00 0HMKHPJDQMT5O:00000011 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Firstname], [s].[Heroname], [s].[Lastname]
+FROM [Superheros] AS [s]" (0723d8ff)
+2022-09-08T16:06:09.6940562-03:00 0HMKHPJDQMT5O:00000011 [INF] Writing value of type '"System.Collections.Generic.List`1[[herois.Models.SuperHero, herois, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"' with status code '200'. (b71b41f5)
+2022-09-08T16:06:09.7033444-03:00 0HMKHPJDQMT5O:00000011 [INF] Executed endpoint '"HTTP: POST /superhero"' (99874f2b)
+2022-09-08T16:06:09.7065514-03:00 0HMKHPJDQMT5O:00000011 [INF] Request finished HTTP/2 POST https://localhost:7245/superhero application/json 77 - 200 - application/json;+charset=utf-8 396.3937ms (791a596a)

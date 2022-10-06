@@ -3,7 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
-//add
+
+//add elias 13/09 log
+ConfigurationManager configuration = builder.Configuration;
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -14,17 +17,20 @@ builder.Services.AddDbContext<DataContext>(options =>
 //serilog elias08/09
 //remove default logging providers
 builder.Logging.ClearProviders();
-//SeriLog configure
-var logger = new LoggerConfiguration()
-     .WriteTo.Console()
-    .CreateLogger();
-//Registra Serilog
-builder.Logging.AddSerilog(logger);
-//Registra Serilog em File
-builder.Logging.AddFile("Logs/minha-app-(Date).txt");
 
+///teste log banco de dados 13/09/2022
+var _serialogLogger = new LoggerConfiguration()
+.WriteTo.MSSqlServer(
+    configuration.GetConnectionString("DefaultConnection"),
+    sinkOptions: new Serilog.Sinks.MSSqlServer.MSSqlServerSinkOptions
+    {
+        AutoCreateSqlTable = true,
+        TableName = "Serilogs"
+    })
+.CreateLogger();
 
 var app = builder.Build();
+app.UsePathBase("/superhero");
 //add
 async Task<List<SuperHero>> GetAllHeroes(DataContext context) =>
        await context.Superheros.ToListAsync();
@@ -35,17 +41,15 @@ app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
 app.MapGet("/", () => "Hello World!");
-
 app.MapGet("/superhero", async (DataContext context) => 
     await context.Superheros.ToListAsync());
 
-//hero id
+//rota hero id
 app.MapGet("/superhero/{id}", async (DataContext context, int id) =>
  await context.Superheros.FindAsync(id) is SuperHero hero ?
  Results.Ok (hero) :
  Results.NotFound("Sorry :("));
 
-//Post
 app.MapPost("/superhero", async (DataContext context, SuperHero hero) =>
 {
     context.Superheros.Add(hero);
@@ -53,7 +57,6 @@ app.MapPost("/superhero", async (DataContext context, SuperHero hero) =>
     return Results.Ok(await GetAllHeroes(context));//Ok(hero);
 });
 
-//Put
 app.MapPut("/superhero/{id}", async (DataContext context, SuperHero hero, int id) =>
 {
     var dbHero = await context.Superheros.FindAsync(id);
@@ -68,7 +71,6 @@ app.MapPut("/superhero/{id}", async (DataContext context, SuperHero hero, int id
     return Results.Ok(await GetAllHeroes(context));
 });
 
-//DELETE
 app.MapDelete("/superhero/{id}", async (DataContext context, int id) =>
 {
     var dbHero = await context.Superheros.FindAsync(id);
